@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JellyBean6 — Mobile Phone Shop | No Cost EMI · 0% Down Payment</title>
+<meta name="description" content="JellyBean6 — your trusted mobile phone shop. Samsung, Apple, Xiaomi, Redmi, Vivo. No Cost EMI & 0% Down Payment available. Enquire on WhatsApp.">
+<meta name="theme-color" content="#db0171">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="images/logo-mark.png">
+<style>
+  :root{
+    --pink:#db0171;
+    --pink-2:#ff3d9a;
+    --pink-dark:#a8005c;
+    --pink-soft:#fff0f7;
+    --pink-line:#ffd3e8;
+    --ink:#1f1324;
+    --muted:#6f6475;
+    --line:#eee6ef;
+    --bg:#ffffff;
+    --bg-2:#fdf8fb;
+    --green:#25d366;
+    --radius:18px;
+    --shadow:0 10px 30px -12px rgba(166,0,92,.25);
+    --shadow-sm:0 4px 14px -6px rgba(31,19,36,.15);
+    --max:1200px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:'Poppins',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer}
+  .wrap{max-width:var(--max);margin:0 auto;padding-inline:20px}
+  [hidden]{display:none!important}
+
+  /* ---------- Top strip ---------- */
+  .strip{background:var(--ink);color:#fff;font-size:13px}
+  .strip .wrap{display:flex;justify-content:space-between;gap:12px;padding-block:8px;flex-wrap:wrap}
+  .strip b{color:var(--pink-2)}
+  .strip a:hover{color:var(--pink-2)}
+
+  /* ---------- Header ---------- */
+  header.site{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:saturate(1.4) blur(10px);border-bottom:1px solid var(--line)}
+  header.site .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+  .logo{display:flex;align-items:center;gap:10px}
+  .logo-mark{width:44px;height:44px;flex:none;display:block;border-radius:12px;object-fit:cover}
+  .logo-text{font-weight:800;font-size:22px;letter-spacing:-.5px;line-height:1}
+  .logo-text span{color:var(--pink)}
+  .logo-text small{display:block;font-size:10.5px;font-weight:500;letter-spacing:1.6px;color:var(--muted);text-transform:uppercase;margin-top:4px}
+  nav.main{display:flex;align-items:center;gap:6px}
+  nav.main a{padding:10px 16px;border-radius:999px;font-weight:500;font-size:15px;color:var(--ink);transition:.2s}
+  nav.main a:hover{background:var(--pink-soft);color:var(--pink)}
+  nav.main a.active{background:var(--pink);color:#fff}
+  .hdr-cta{display:flex;align-items:center;gap:10px}
+  .burger{display:none;width:44px;height:44px;border-radius:12px;border:1px solid var(--line);background:#fff;align-items:center;justify-content:center}
+  .burger svg{width:22px;height:22px}
+
+  /* ---------- Buttons ---------- */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:600;font-size:15px;border:2px solid transparent;transition:.2s;white-space:nowrap}
+  .btn svg{width:18px;height:18px;flex:none}
+  .btn-pink{background:var(--pink);color:#fff;box-shadow:0 8px 20px -8px rgba(230,0,126,.6)}
+  .btn-pink:hover{background:var(--pink-dark);transform:translateY(-1px)}
+  .btn-white{background:#fff;color:var(--pink)}
+  .btn-white:hover{transform:translateY(-1px);box-shadow:var(--shadow)}
+  .btn-outline{border-color:var(--pink);color:var(--pink);background:#fff}
+  .btn-outline:hover{background:var(--pink-soft)}
+  .btn-wa{background:var(--green);color:#fff;box-shadow:0 8px 20px -8px rgba(37,211,102,.7)}
+  .btn-wa:hover{background:#1eb858;transform:translateY(-1px)}
+  .btn-ghost-w{border-color:rgba(255,255,255,.6);color:#fff}
+  .btn-ghost-w:hover{background:rgba(255,255,255,.12)}
+  .btn-sm{padding:9px 16px;font-size:14px}
+  .btn-lg{padding:15px 28px;font-size:16px}
+
+  /* ---------- Hero ---------- */
+  .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 85% -10%,#ff5fae 0%,transparent 60%),linear-gradient(120deg,#c3006a 0%,#db0171 45%,#ff3d9a 100%);color:#fff}
+  .hero::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.14) 1.2px,transparent 1.2px);background-size:22px 22px;mask-image:linear-gradient(90deg,transparent,#000 60%)}
+  .hero .wrap{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:64px 72px}
+  .tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:22px}
+  .tag{display:inline-flex;align-items:center;gap:8px;background:#fff;color:var(--pink);font-weight:700;font-size:14px;padding:8px 16px;border-radius:999px;box-shadow:0 6px 18px -6px rgba(0,0,0,.25)}
+  .tag svg{width:16px;height:16px}
+  .tag.alt{background:var(--ink);color:#fff}
+  .hero h1{font-size:clamp(34px,5vw,58px);line-height:1.08;margin:0 0 18px;font-weight:800;letter-spacing:-1.5px}
+  .hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,rgba(255,255,255,.28) 62%)}
+  .hero p.lead{font-size:clamp(15px,1.6vw,18px);opacity:.92;max-width:520px;margin:0 0 28px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+  .hero-stats{display:flex;gap:28px;margin-top:36px;flex-wrap:wrap}
+  .hero-stats div{font-size:13px;opacity:.9}
+  .hero-stats b{display:block;font-size:26px;font-weight:800;opacity:1}
+  .hero-visual{position:relative;height:420px}
+  .hero-visual .ph{position:absolute;filter:drop-shadow(0 30px 40px rgba(60,0,30,.45))}
+  .hero-visual .ph.a{left:6%;top:40px;width:44%;transform:rotate(-10deg)}
+  .hero-visual .ph.b{left:30%;top:0;width:44%;z-index:2}
+  .hero-visual .ph.c{right:2%;top:50px;width:40%;transform:rotate(9deg)}
+  .hero-badge{position:absolute;z-index:3;background:#fff;color:var(--ink);border-radius:16px;padding:12px 16px;box-shadow:0 18px 40px -12px rgba(60,0,30,.45);font-size:13px;display:flex;align-items:center;gap:10px}
+  .hero-badge b{display:block;font-size:15px;color:var(--pink)}
+  .hero-badge .ic{width:36px;height:36px;border-radius:10px;background:var(--pink-soft);display:grid;place-items:center;color:var(--pink)}
+  .hero-badge .ic svg{width:20px;height:20px}
+  .hero-badge.one{left:0;bottom:30px}
+  .hero-badge.two{right:0;top:0}
+
+  /* ---------- Sections ---------- */
+  section.block{padding-block:72px}
+  section.block.tint{background:var(--bg-2)}
+  .sec-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:32px;flex-wrap:wrap}
+  .eyebrow{display:inline-block;color:var(--pink);font-weight:700;font-size:13px;letter-spacing:1.8px;text-transform:uppercase;margin-bottom:6px}
+  .sec-head h2{font-size:clamp(26px,3.4vw,36px);margin:0;line-height:1.15;letter-spacing:-.8px;font-weight:800}
+  .sec-head p{margin:6px 0 0;color:var(--muted)}
+  .link-more{color:var(--pink);font-weight:600;display:inline-flex;align-items:center;gap:6px}
+  .link-more:hover{gap:10px}
+  .link-more svg{width:18px;height:18px;transition:.2s}
+
+  /* ---------- Brands ---------- */
+  .brands{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+  .brand{background:#fff;border:1px solid var(--line);border-radius:var(--radius);height:104px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;transition:.25s;cursor:pointer}
+  .brand:hover{border-color:var(--pink);box-shadow:var(--shadow);transform:translateY(-3px)}
+  .brand .bn{font-size:24px;font-weight:800;letter-spacing:-.5px}
+  .brand small{font-size:12px;color:var(--muted)}
+  .brand.samsung .bn{font-family:Arial,Helvetica,sans-serif;letter-spacing:2px;color:#1428a0;font-size:20px}
+  .brand.apple .bn{color:#111;font-weight:600;display:flex;align-items:center;gap:6px}
+  .brand.apple .bn svg{width:22px;height:22px}
+  .brand.xiaomi .bn{color:#ff6900}
+  .brand.redmi .bn{color:#e4002b;font-style:italic}
+  .brand.vivo .bn{color:#415fff;font-weight:700;font-size:28px;letter-spacing:0}
+
+  /* ---------- Product cards ---------- */
+  .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  .card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;transition:.25s;position:relative}
+  .card:hover{border-color:var(--pink-line);box-shadow:var(--shadow);transform:translateY(-4px)}
+  .card .media{background:linear-gradient(160deg,var(--pink-soft),#fff 70%);aspect-ratio:1/1;display:block;position:relative;overflow:hidden;cursor:pointer}
+  .card .media svg,.card .media img{position:absolute;top:0;left:0;right:0;bottom:0;margin:auto;width:auto;height:auto;max-width:64%;max-height:84%;filter:drop-shadow(0 14px 18px rgba(80,0,40,.18));transition:.35s}
+  .card:hover .media svg,.card:hover .media img{transform:scale(1.05) rotate(-2deg)}
+  .ribbon{position:absolute;z-index:2;top:12px;left:12px;background:var(--pink);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;letter-spacing:.4px;text-transform:uppercase}
+  .ribbon.new{background:var(--ink)}
+  .card .body{padding:16px 16px 18px;display:flex;flex-direction:column;gap:4px;flex:1}
+  .card .brand-lbl{font-size:12px;font-weight:600;color:var(--pink);text-transform:uppercase;letter-spacing:1px}
+  .card h3{margin:0;font-size:16px;font-weight:600;line-height:1.3;cursor:pointer}
+  .card h3:hover{color:var(--pink)}
+  .card .variant{font-size:13px;color:var(--muted)}
+  .price-row{display:flex;align-items:baseline;gap:8px;margin-top:6px;flex-wrap:wrap}
+  .price{font-size:20px;font-weight:800;color:var(--ink)}
+  .mrp{font-size:13px;color:var(--muted);text-decoration:line-through}
+  .off{font-size:12px;font-weight:700;color:#0a9a4a}
+  .emi{font-size:12px;color:var(--pink-dark);background:var(--pink-soft);padding:4px 10px;border-radius:8px;align-self:flex-start;margin-top:4px;font-weight:500}
+  .card .actions{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:auto;padding-top:14px}
+  .card .actions .btn{padding:9px 10px;font-size:13px}
+
+  /* ---------- Highlights ---------- */
+  .highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .hl{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:24px;display:flex;flex-direction:column;gap:10px}
+  .hl .ic{width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--pink),var(--pink-2));display:grid;place-items:center;color:#fff;box-shadow:0 10px 20px -10px rgba(230,0,126,.8)}
+  .hl .ic svg{width:26px;height:26px}
+  .hl h4{margin:4px 0 0;font-size:17px;font-weight:700}
+  .hl p{margin:0;color:var(--muted);font-size:14px}
+
+  /* ---------- EMI banner ---------- */
+  .emi-banner{background:var(--ink);color:#fff;border-radius:28px;padding:44px;display:grid;grid-template-columns:1.4fr 1fr;gap:30px;align-items:center;position:relative;overflow:hidden}
+  .emi-banner::after{content:"";position:absolute;right:-80px;top:-80px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,var(--pink) 0%,transparent 70%);opacity:.55}
+  .emi-banner h3{font-size:clamp(24px,3vw,34px);margin:0 0 10px;line-height:1.15;letter-spacing:-.5px}
+  .emi-banner h3 span{color:var(--pink-2)}
+  .emi-banner p{margin:0;opacity:.8}
+  .emi-banner .actions{display:flex;gap:12px;justify-content:flex-end;flex-wrap:wrap;position:relative;z-index:1}
+  .banks{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+  .banks span{border:1px solid rgba(255,255,255,.2);padding:5px 12px;border-radius:999px;font-size:12px;opacity:.9}
+
+  /* ---------- Page header ---------- */
+  .page-head{background:linear-gradient(120deg,#c3006a,#db0171 50%,#ff3d9a);color:#fff;padding-block:44px}
+  .page-head h1{margin:0;font-size:clamp(28px,4vw,40px);letter-spacing:-1px;font-weight:800}
+  .page-head p{margin:6px 0 0;opacity:.9}
+  .crumbs{font-size:13px;opacity:.85;margin-bottom:10px}
+  .crumbs a:hover{text-decoration:underline}
+
+  /* ---------- Listing ---------- */
+  .listing{display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:start}
+  .filters{position:sticky;top:92px;background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px}
+  .filters h4{margin:0 0 12px;font-size:14px;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted);font-weight:600}
+  .f-group{padding-bottom:18px;margin-bottom:18px;border-bottom:1px solid var(--line)}
+  .f-group:last-of-type{border-bottom:0;margin-bottom:8px}
+  .chk{display:flex;align-items:center;gap:10px;padding:6px 0;cursor:pointer;font-size:15px}
+  .chk input{appearance:none;width:20px;height:20px;border:2px solid #d6c9d6;border-radius:6px;display:grid;place-items:center;margin:0;transition:.15s;flex:none}
+  .chk input:checked{background:var(--pink);border-color:var(--pink)}
+  .chk input:checked::after{content:"";width:5px;height:10px;border:solid #fff;border-width:0 2px 2px 0;transform:rotate(45deg) translate(-1px,-1px)}
+  .chk input[type=radio]{border-radius:50%}
+  .chk input[type=radio]:checked::after{width:8px;height:8px;border:0;background:#fff;border-radius:50%;transform:none}
+  .chk .cnt{margin-left:auto;font-size:12px;color:var(--muted);background:var(--bg-2);padding:1px 8px;border-radius:999px}
+  .range-row{display:flex;gap:8px;align-items:center;margin-top:10px}
+  .range-row input{width:100%;padding:9px 10px;border:1px solid var(--line);border-radius:10px;font-family:inherit;font-size:14px}
+  .range-row input:focus{outline:2px solid var(--pink-line);border-color:var(--pink)}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+  .toolbar .count{color:var(--muted);font-size:15px}
+  .toolbar .count b{color:var(--ink)}
+  .toolbar-r{display:flex;gap:10px;align-items:center}
+  select.sort{padding:10px 36px 10px 14px;border:1px solid var(--line);border-radius:999px;font-family:inherit;font-size:14px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23db0171' stroke-width='2.5'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 12px center/16px;appearance:none;cursor:pointer}
+  .filter-toggle{display:none}
+  .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+  .chip{display:inline-flex;align-items:center;gap:6px;background:var(--pink-soft);color:var(--pink-dark);border:1px solid var(--pink-line);padding:5px 12px;border-radius:999px;font-size:13px;font-weight:500;cursor:pointer}
+  .chip:hover{background:var(--pink-line)}
+  .empty{text-align:center;padding:60px 20px;border:2px dashed var(--line);border-radius:var(--radius);color:var(--muted)}
+  .empty h3{color:var(--ink);margin:0 0 6px}
+  .listing .grid{grid-template-columns:repeat(3,1fr)}
+
+  /* ---------- Detail ---------- */
+  .detail{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+  .gallery{position:sticky;top:92px}
+  .gallery .stage{background:radial-gradient(circle at 50% 40%,#fff 0%,var(--pink-soft) 75%);border-radius:28px;aspect-ratio:1/1.02;position:relative;overflow:hidden;border:1px solid var(--pink-line)}
+  .gallery .stage .pair{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;gap:4%;padding:7% 6%}
+  .gallery .stage svg,.gallery .stage img{height:100%;width:auto;max-width:46%;filter:drop-shadow(0 24px 30px rgba(80,0,40,.25))}
+  .gallery .stage .pair > :only-child{max-width:96%}
+  .gallery .stage .pair > :first-child:not(:only-child){height:92%}
+  .thumbs{display:flex;gap:10px;margin-top:14px}
+  .thumbs button{flex:1;height:84px;border-radius:14px;border:2px solid var(--line);background:var(--bg-2);display:grid;place-items:center;padding:8px;transition:.2s;overflow:hidden}
+  .thumbs button svg,.thumbs button img{width:auto;height:auto;max-height:100%;max-width:100%}
+  .thumbs button.on{border-color:var(--pink);background:var(--pink-soft)}
+  .d-info .brand-lbl{color:var(--pink);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1.4px}
+  .d-info h1{font-size:clamp(26px,3.4vw,38px);margin:6px 0 8px;line-height:1.15;letter-spacing:-.8px;font-weight:800}
+  .rating{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
+  .rating .stars{color:#ffb400;letter-spacing:1px}
+  .d-price{display:flex;align-items:baseline;gap:12px;margin:20px 0 6px;flex-wrap:wrap}
+  .d-price .price{font-size:36px}
+  .tax{font-size:13px;color:var(--muted)}
+  .offer-box{border:1px dashed var(--pink);background:var(--pink-soft);border-radius:16px;padding:14px 16px;margin:18px 0;display:grid;gap:8px}
+  .offer-box div{display:flex;gap:10px;align-items:flex-start;font-size:14px}
+  .offer-box svg{width:18px;height:18px;color:var(--pink);flex:none;margin-top:2px}
+  .opt-label{font-weight:600;font-size:14px;margin:18px 0 10px}
+  .opt-label span{color:var(--muted);font-weight:400}
+  .swatches{display:flex;gap:10px;flex-wrap:wrap}
+  .sw{width:40px;height:40px;border-radius:50%;border:3px solid #fff;box-shadow:0 0 0 1px var(--line);cursor:pointer;transition:.15s}
+  .sw.on{box-shadow:0 0 0 2px var(--pink)}
+  .pills{display:flex;gap:10px;flex-wrap:wrap}
+  .pill{padding:10px 16px;border:1.5px solid var(--line);border-radius:12px;background:#fff;font-size:14px;font-weight:500;transition:.15s;text-align:left}
+  .pill small{display:block;color:var(--muted);font-size:12px;font-weight:400}
+  .pill.on{border-color:var(--pink);background:var(--pink-soft);color:var(--pink-dark)}
+  .d-actions{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:26px 0 10px}
+  .d-actions .btn{padding:16px}
+  .note{font-size:13px;color:var(--muted);display:flex;gap:8px;align-items:center}
+  .note svg{width:16px;height:16px;color:var(--pink)}
+  .quick-specs{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:26px 0}
+  .qs{background:var(--bg-2);border:1px solid var(--line);border-radius:14px;padding:12px;text-align:center}
+  .qs svg{width:22px;height:22px;color:var(--pink);margin:0 auto 6px}
+  .qs b{display:block;font-size:14px;line-height:1.2}
+  .qs small{color:var(--muted);font-size:11.5px}
+  .specs{margin-top:56px}
+  .specs h2{font-size:26px;margin:0 0 18px;letter-spacing:-.5px}
+  .spec-table{width:100%;border-collapse:separate;border-spacing:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;font-size:15px}
+  .spec-table th{background:var(--pink);color:#fff;text-align:left;padding:14px 20px;font-size:14px;text-transform:uppercase;letter-spacing:1.2px}
+  .spec-table td{padding:14px 20px;border-top:1px solid var(--line);vertical-align:top}
+  .spec-table td:first-child{width:32%;color:var(--muted);font-weight:500;background:var(--bg-2)}
+  .spec-table tr.group td{background:var(--pink-soft);color:var(--pink-dark);font-weight:700;font-size:13px;text-transform:uppercase;letter-spacing:1px}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:28px;align-items:stretch}
+  .info-cards{display:grid;gap:14px}
+  .ic-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;gap:16px;align-items:flex-start}
+  .ic-card .ic{width:48px;height:48px;border-radius:14px;background:var(--pink-soft);color:var(--pink);display:grid;place-items:center;flex:none}
+  .ic-card .ic svg{width:24px;height:24px}
+  .ic-card h4{margin:0 0 4px;font-size:16px}
+  .ic-card p{margin:0;color:var(--muted);font-size:15px}
+  .ic-card a.lnk{color:var(--pink);font-weight:600}
+  .hours{width:100%;font-size:14.5px;border-collapse:collapse;margin-top:4px}
+  .hours td{padding:3px 0;color:var(--muted)}
+  .hours td:last-child{text-align:right;color:var(--ink);font-weight:500}
+  .hours tr.today td{color:var(--pink);font-weight:700}
+  .open-now{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-left:6px;vertical-align:middle}
+  .open-now::before{content:"";width:7px;height:7px;border-radius:50%;background:currentColor}
+  .open-now.yes{background:#e5f9ee;color:#0a9a4a}
+  .open-now.no{background:#fdecec;color:#c62828}
+  .map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);min-height:380px;background:var(--bg-2);position:relative;display:flex;flex-direction:column}
+  .map iframe{border:0;width:100%;flex:1;min-height:320px}
+  .map .map-foot{padding:14px 18px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;background:#fff;border-top:1px solid var(--line)}
+  .wa-cta{margin-top:28px;background:linear-gradient(120deg,#0f9d58,#25d366);color:#fff;border-radius:24px;padding:30px 34px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+  .wa-cta h3{margin:0 0 4px;font-size:24px}
+  .wa-cta p{margin:0;opacity:.9}
+  .wa-cta .btn{background:#fff;color:#0f9d58}
+
+  /* ---------- Footer ---------- */
+  footer.site{background:#170d1b;color:#d9cfdc;padding-top:60px;margin-top:0}
+  footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:36px;padding-bottom:40px}
+  footer .logo-text{color:#fff}
+  footer .logo-text small{color:#a597aa}
+  footer p{font-size:14px;margin:14px 0 0;color:#b6a9ba}
+  footer h5{color:#fff;font-size:15px;margin:6px 0 16px;font-weight:600}
+  footer ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;font-size:14.5px}
+  footer ul a:hover{color:var(--pink-2)}
+  .social{display:flex;gap:10px;margin-top:18px}
+  .social a{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.08);display:grid;place-items:center;transition:.2s}
+  .social a:hover{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af)}
+  .social a.wa:hover{background:var(--green)}
+  .social svg{width:20px;height:20px}
+  .insta-handle{display:inline-flex;align-items:center;gap:8px;margin-top:14px;color:#fff;font-weight:600;font-size:14px}
+  .insta-handle:hover{color:var(--pink-2)}
+  .insta-handle svg{width:18px;height:18px}
+  .copy{border-top:1px solid rgba(255,255,255,.08);padding-block:20px;font-size:13px;color:#8f8394;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+  /* ---------- Floating WhatsApp ---------- */
+  .fab-wa{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom,0px));z-index:90;width:62px;height:62px;border-radius:50%;background:var(--green);color:#fff;display:grid;place-items:center;box-shadow:0 12px 28px -6px rgba(37,211,102,.7);transition:.2s}
+  .fab-wa:hover{transform:scale(1.08)}
+  .fab-wa svg{width:34px;height:34px}
+  .fab-wa::before{content:"";position:absolute;inset:0;border-radius:50%;background:var(--green);animation:pulse 2.2s infinite;z-index:-1}
+  .fab-wa .tip{position:absolute;right:74px;white-space:nowrap;background:#fff;color:var(--ink);font-size:13px;font-weight:600;padding:8px 14px;border-radius:12px;box-shadow:var(--shadow-sm);opacity:0;transform:translateX(8px);transition:.2s;pointer-events:none}
+  .fab-wa:hover .tip{opacity:1;transform:none}
+  @keyframes pulse{0%{transform:scale(1);opacity:.55}100%{transform:scale(1.6);opacity:0}}
+
+  /* page transition */
+  main > .page{animation:fade .35s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1080px){
+    .grid{grid-template-columns:repeat(3,1fr)}
+    .listing .grid{grid-template-columns:repeat(2,1fr)}
+    .highlights{grid-template-columns:repeat(2,1fr)}
+    footer .cols{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:880px){
+    .hero .wrap{grid-template-columns:1fr;padding-block:44px 40px}
+    .hero-visual{height:320px;max-width:460px;width:100%;margin:0 auto}
+    .brands{grid-template-columns:repeat(3,1fr)}
+    .detail{grid-template-columns:1fr;gap:28px}
+    .gallery{position:static}
+    .contact-grid{grid-template-columns:1fr}
+    .emi-banner{grid-template-columns:1fr;padding:32px}
+    .emi-banner .actions{justify-content:flex-start}
+    .listing{grid-template-columns:1fr}
+    .filters{position:fixed;inset:0 auto 0 0;width:min(320px,86vw);z-index:120;border-radius:0 20px 20px 0;overflow:auto;transform:translateX(-105%);transition:transform .3s;top:0}
+    .filters.open{transform:none;box-shadow:0 0 0 100vmax rgba(31,19,36,.45)}
+    .filter-toggle{display:inline-flex}
+    .filters .f-close{display:flex!important}
+  }
+  @media (max-width:760px){
+    nav.main{position:absolute;left:0;right:0;top:72px;background:#fff;flex-direction:column;align-items:stretch;padding:12px 20px 20px;border-bottom:1px solid var(--line);box-shadow:0 20px 30px -20px rgba(0,0,0,.2);display:none}
+    nav.main.open{display:flex}
+    nav.main a{padding:14px 16px;border-radius:12px}
+    .burger{display:inline-flex}
+    .hdr-cta .btn span{display:none}
+    .hdr-cta .btn{padding:10px}
+    .grid,.listing .grid{grid-template-columns:repeat(2,1fr);gap:12px}
+    .card .body{padding:12px}
+    .card h3{font-size:14.5px}
+    .price{font-size:17px}
+    .card .actions{grid-template-columns:1fr}
+    .card .media{padding:14px}
+    section.block{padding-block:52px}
+    .quick-specs{grid-template-columns:repeat(2,1fr)}
+    .strip .hide-sm{display:none}
+    .spec-table td{padding:12px 14px}
+  }
+  @media (max-width:480px){
+    .wrap{padding-inline:16px}
+    .brands{grid-template-columns:repeat(2,1fr)}
+    .brands .brand:last-child{grid-column:span 2}
+    .highlights{grid-template-columns:1fr}
+    footer .cols{grid-template-columns:1fr}
+    .d-actions{grid-template-columns:1fr}
+    .hero-badge{font-size:11.5px;padding:9px 12px}
+    .hero-badge.two{top:-6px}
+    .logo-text{font-size:19px}
+    .fab-wa{width:56px;height:56px;right:16px}
+    .wa-cta{padding:22px 18px}
+    .wa-cta .btn{width:100%;padding-inline:14px;white-space:normal;text-align:center}
+  }
+</style>
+</head>
+<body>
+
+<!-- Top info strip -->
+<div class="strip">
+  <div class="wrap">
+    <div>🎉 <b>No Cost EMI</b> &amp; <b>0% Down Payment</b> on all top brands</div>
+    <div class="hide-sm"><a href="#" data-call>📞 <span data-phone-text></span></a> &nbsp;·&nbsp; <span data-hours-short></span></div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="site">
+  <div class="wrap">
+    <a href="#/" class="logo" aria-label="JellyBean6 home">
+      <img class="logo-mark" src="images/logo-mark.png" alt="JellyBean6 logo" width="44" height="44">
+      <div class="logo-text">Jelly<span>Bean6</span><small>Mobile Store</small></div>
+    </a>
+    <nav class="main" id="nav">
+      <a href="#/" data-nav="home">Home</a>
+      <a href="#/products" data-nav="products">Products</a>
+      <a href="#/contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a class="btn btn-pink btn-sm" href="#" data-call aria-label="Call now">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>
+        <span>Call Now</span>
+      </a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<!-- Footer -->
+<footer class="site">
+  <div class="wrap">
+    <div class="cols">
+      <div>
+        <a href="#/" class="logo">
+          <img class="logo-mark" src="images/logo-mark.png" alt="JellyBean6 logo" width="44" height="44">
+          <div class="logo-text">Jelly<span>Bean6</span><small>Mobile Store</small></div>
+        </a>
+        <p>Your neighbourhood destination for the latest smartphones from all top brands — with No Cost EMI, 0% down payment and honest advice.</p>
+        <div class="social">
+          <a data-insta target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.4" r="1" fill="#fff" stroke="none"/></svg>
+          </a>
+          <a class="wa" data-wa target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 32 32" fill="#fff"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.7-.4z"/></svg>
+          </a>
+        </div>
+        <a class="insta-handle" data-insta target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.2"/></svg>
+          <span data-insta-text></span>
+        </a>
+      </div>
+      <div>
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/products">All Products</a></li>
+          <li><a href="#/contact">Contact Us</a></li>
+          <li><a href="#/products" data-brand-link="Samsung">Samsung Phones</a></li>
+          <li><a href="#/products" data-brand-link="Apple">Apple iPhones</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Shop By Brand</h5>
+        <ul>
+          <li><a href="#/products" data-brand-link="Xiaomi">Xiaomi</a></li>
+          <li><a href="#/products" data-brand-link="Redmi">Redmi</a></li>
+          <li><a href="#/products" data-brand-link="Vivo">Vivo</a></li>
+          <li><a href="#/products" data-brand-link="Samsung">Samsung</a></li>
+          <li><a href="#/products" data-brand-link="Apple">Apple</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Visit Our Store</h5>
+        <ul>
+          <li data-address-footer></li>
+          <li><a href="#" data-call>📞 <span data-phone-text></span></a></li>
+          <li><span data-hours-short></span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      <div>© <span id="yr"></span> JellyBean6 Mobile Store. All rights reserved.</div>
+      <div>Prices are indicative &amp; subject to change. EMI via partner banks / finance.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a class="fab-wa" data-wa target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+  <span class="tip">Chat with us on WhatsApp</span>
+  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.7-.4z"/></svg>
+</a>
+
+<script>
+/* =========================================================
+   SHOP SETTINGS — edit these to update the whole website
+   ========================================================= */
+const SHOP = {
+  name: "JellyBean6",
+  phone: "+91 98765 43210",          // shown on site
+  phoneRaw: "919876543210",          // digits only, with country code (used for call + WhatsApp)
+  address: ["Shop No. 6, Ground Floor, Galaxy Plaza", "MG Road, Near City Bus Stand", "Pune, Maharashtra 411001"],
+  mapQuery: "MG Road Pune",          // what Google Maps should search for
+  instagram: "jellybein6",
+  hours: [ // 0 = Sunday
+    { day: "Monday",    open: "10:00", close: "21:30" },
+    { day: "Tuesday",   open: "10:00", close: "21:30" },
+    { day: "Wednesday", open: "10:00", close: "21:30" },
+    { day: "Thursday",  open: "10:00", close: "21:30" },
+    { day: "Friday",    open: "10:00", close: "21:30" },
+    { day: "Saturday",  open: "10:00", close: "22:00" },
+    { day: "Sunday",    open: "11:00", close: "20:00" },
+  ],
+};
+
+/* =========================================================
+   PRODUCTS — add / edit phones here.
+   Optional: set  image: "images/phone.png"  to use a real photo
+   instead of the built-in illustration.
+   ========================================================= */
+const PRODUCTS = [
+  { id:"galaxy-s25-ultra", brand:"Samsung", name:"Samsung Galaxy S25 Ultra", price:129999, mrp:134999, tag:"Bestseller", featured:true, cam:"samsung-ultra",
+    colors:[["Titanium Silverblue","#8fa4b8","#5d7389"],["Titanium Black","#4a4b4f","#1f2023"],["Titanium Gray","#a6a39d","#7b7872"],["Titanium Whitesilver","#e7e7e4","#c3c3bf"]],
+    variants:[["12GB","256GB",129999],["12GB","512GB",141999],["12GB","1TB",165999]],
+    specs:{display:'6.9" QHD+ Dynamic AMOLED 2X, 120Hz',processor:"Snapdragon 8 Elite for Galaxy",rear:"200MP + 50MP UW + 50MP 5x + 10MP 3x",front:"12MP",battery:"5000 mAh, 45W wired",os:"Android 15, One UI 7",extras:"S Pen, Galaxy AI, IP68, Titanium frame",network:"5G, Wi-Fi 7, Bluetooth 5.4",weight:"218 g"} },
+
+  { id:"iphone-17-pro", brand:"Apple", name:"Apple iPhone 17 Pro", price:134900, mrp:134900, tag:"New", featured:true, cam:"iphone-pro",
+    colors:[["Cosmic Orange","#e8793a","#b9531c"],["Deep Blue","#3b4a66","#1f2a40"],["Silver","#e9e9eb","#c6c7cb"]],
+    variants:[["12GB","256GB",134900],["12GB","512GB",154900],["12GB","1TB",174900]],
+    specs:{display:'6.3" Super Retina XDR OLED, ProMotion 120Hz',processor:"A19 Pro chip",rear:"48MP Main + 48MP UW + 48MP 4x Telephoto",front:"18MP Center Stage",battery:"Up to 31 hrs video playback",os:"iOS 26",extras:"Apple Intelligence, Camera Control, IP68",network:"5G, Wi-Fi 7, Bluetooth 6",weight:"204 g"} },
+
+  { id:"iphone-17", brand:"Apple", name:"Apple iPhone 17", price:82900, mrp:82900, tag:"New", featured:true, cam:"iphone",
+    colors:[["Lavender","#cfc3e6","#a898c8"],["Sage","#b9c7ad","#8fa183"],["Mist Blue","#b7cbe0","#8ea7c2"],["Black","#3a3a3c","#161617"],["White","#f3f3f1","#d4d4d0"]],
+    variants:[["8GB","256GB",82900],["8GB","512GB",102900]],
+    specs:{display:'6.3" Super Retina XDR OLED, ProMotion 120Hz',processor:"A19 chip",rear:"48MP Fusion + 48MP Ultra Wide",front:"18MP Center Stage",battery:"Up to 30 hrs video playback",os:"iOS 26",extras:"Ceramic Shield 2, Camera Control, IP68",network:"5G, Wi-Fi 7, Bluetooth 6",weight:"177 g"} },
+
+  { id:"iphone-16", brand:"Apple", name:"Apple iPhone 16", price:69900, mrp:79900, tag:"Price Drop", featured:false, cam:"iphone",
+    colors:[["Ultramarine","#6a78d6","#4150b0"],["Teal","#8cc3c0","#5d9a97"],["Pink","#f2b8d0","#d98eb0"],["Black","#3a3a3c","#161617"]],
+    variants:[["8GB","128GB",69900],["8GB","256GB",79900]],
+    specs:{display:'6.1" Super Retina XDR OLED',processor:"A18 chip",rear:"48MP Fusion + 12MP Ultra Wide",front:"12MP TrueDepth",battery:"Up to 22 hrs video playback",os:"iOS 26",extras:"Action button, Camera Control, IP68",network:"5G, Wi-Fi 7, Bluetooth 5.3",weight:"170 g"} },
+
+  { id:"galaxy-s25", brand:"Samsung", name:"Samsung Galaxy S25", price:74999, mrp:80999, tag:"Hot Deal", featured:true, cam:"samsung",
+    colors:[["Icyblue","#b8cde0","#8aa5bf"],["Navy","#2f3a55","#161d31"],["Mint","#c5e3d5","#96c4ae"],["Silver Shadow","#c9c9cb","#9fa0a3"]],
+    variants:[["12GB","128GB",74999],["12GB","256GB",80999]],
+    specs:{display:'6.2" FHD+ Dynamic AMOLED 2X, 120Hz',processor:"Snapdragon 8 Elite for Galaxy",rear:"50MP + 12MP UW + 10MP 3x Tele",front:"12MP",battery:"4000 mAh, 25W wired",os:"Android 15, One UI 7",extras:"Galaxy AI, IP68, Armor Aluminium",network:"5G, Wi-Fi 7, Bluetooth 5.4",weight:"162 g"} },
+
+  { id:"galaxy-a56", brand:"Samsung", name:"Samsung Galaxy A56 5G", price:41999, mrp:44999, tag:"Popular", featured:true, cam:"samsung-a",
+    colors:[["Awesome Graphite","#4d4e52","#26272a"],["Awesome Lightgray","#dcdcdc","#b5b5b7"],["Awesome Olive","#a8ab8c","#7c7f63"]],
+    variants:[["8GB","128GB",41999],["8GB","256GB",44999],["12GB","256GB",47999]],
+    specs:{display:'6.7" FHD+ Super AMOLED, 120Hz',processor:"Exynos 1580",rear:"50MP OIS + 12MP UW + 5MP Macro",front:"12MP",battery:"5000 mAh, 45W fast charging",os:"Android 15, One UI 7",extras:"Awesome Intelligence, IP67, 6 OS updates",network:"5G, Wi-Fi 6E, Bluetooth 5.3",weight:"198 g"} },
+
+  { id:"xiaomi-15", brand:"Xiaomi", name:"Xiaomi 15", price:64999, mrp:69999, tag:"Leica", featured:true, cam:"xiaomi",
+    colors:[["Black","#2c2c2e","#101012"],["White","#f1f1ef","#cfcfcb"],["Green","#7fa58f","#557a65"]],
+    variants:[["12GB","512GB",64999]],
+    specs:{display:'6.36" 1.5K LTPO AMOLED, 120Hz',processor:"Snapdragon 8 Elite",rear:"50MP Leica Main + 50MP UW + 50MP Tele",front:"32MP",battery:"5240 mAh, 90W HyperCharge + 50W wireless",os:"Android 15, HyperOS 2",extras:"Leica optics, IP68, Xiaomi Shield Glass",network:"5G, Wi-Fi 7, Bluetooth 6.0",weight:"191 g"} },
+
+  { id:"redmi-note-14-pro-plus", brand:"Redmi", name:"Redmi Note 14 Pro+ 5G", price:29999, mrp:34999, tag:"Bestseller", featured:true, cam:"redmi",
+    colors:[["Titan Black","#3a3b3f","#1a1b1e"],["Phantom Purple","#9b8ec9","#6d5fa3"],["Spectre Blue","#8ab0d8","#5b84b3"]],
+    variants:[["8GB","256GB",29999],["12GB","512GB",34999]],
+    specs:{display:'6.67" 1.5K Curved AMOLED, 120Hz',processor:"Snapdragon 7s Gen 3",rear:"50MP Light Fusion 800 + 50MP 2.5x Tele + 8MP UW",front:"20MP",battery:"6200 mAh, 90W HyperCharge",os:"Android 14, HyperOS",extras:"IP68 + IP69, Gorilla Glass Victus 2",network:"5G, Wi-Fi 6, Bluetooth 5.4",weight:"205 g"} },
+
+  { id:"redmi-15-5g", brand:"Redmi", name:"Redmi 15 5G", price:14999, mrp:17999, tag:"Value Pick", featured:false, cam:"redmi",
+    colors:[["Midnight Black","#2f3034","#141518"],["Frosted White","#eeeeec","#cbcbc7"],["Sandy Purple","#c8b3d6","#9e86b0"]],
+    variants:[["6GB","128GB",14999],["8GB","128GB",15999],["8GB","256GB",16999]],
+    specs:{display:'6.9" FHD+ LCD, 144Hz',processor:"Snapdragon 6s Gen 3",rear:"50MP AI Dual Camera",front:"8MP",battery:"7000 mAh, 33W fast charging",os:"Android 15, HyperOS 2",extras:"IP64, 18W reverse charging",network:"5G, Wi-Fi 5, Bluetooth 5.1",weight:"217 g"} },
+
+  { id:"vivo-v60", brand:"Vivo", name:"Vivo V60 5G", price:36999, mrp:39999, tag:"New", featured:true, cam:"vivo",
+    colors:[["Mist Gray","#b8bcc2","#8b9098"],["Berry Purple","#b88ab7","#8a5b8a"],["Auspicious Gold","#e7d2a7","#c3a874"]],
+    variants:[["8GB","128GB",36999],["8GB","256GB",38999],["12GB","256GB",40999]],
+    specs:{display:'6.77" 1.5K Quad-Curved AMOLED, 120Hz',processor:"Snapdragon 7 Gen 4",rear:"50MP ZEISS Main + 50MP 3x Tele + 8MP UW",front:"50MP Group Selfie",battery:"6500 mAh, 90W FlashCharge",os:"Android 15, Funtouch OS 15",extras:"ZEISS Optics, Aura Light, IP68 + IP69",network:"5G, Wi-Fi 6, Bluetooth 5.4",weight:"201 g"} },
+
+  { id:"vivo-x200-pro", brand:"Vivo", name:"Vivo X200 Pro", price:94999, mrp:99999, tag:"Flagship", featured:false, cam:"vivo-x",
+    colors:[["Titanium Grey","#8f9095","#5d5e63"],["Cosmos Black","#2b2b2d","#0f0f10"]],
+    variants:[["16GB","512GB",94999]],
+    specs:{display:'6.78" 1.5K LTPO AMOLED, 120Hz',processor:"MediaTek Dimensity 9400",rear:"50MP ZEISS + 200MP APO Telephoto + 50MP UW",front:"32MP",battery:"6000 mAh, 90W wired + 30W wireless",os:"Android 15, Funtouch OS 15",extras:"ZEISS APO Tele, V3+ imaging chip, IP69",network:"5G, Wi-Fi 7, Bluetooth 5.4",weight:"228 g"} },
+
+  { id:"vivo-t4", brand:"Vivo", name:"Vivo T4 5G", price:21999, mrp:24999, tag:"", featured:false, cam:"vivo",
+    colors:[["Emerald Blaze","#3f8a72","#236150"],["Phantom Grey","#6d6f75","#44464b"]],
+    variants:[["8GB","128GB",21999],["8GB","256GB",23999],["12GB","256GB",25999]],
+    specs:{display:'6.77" FHD+ Quad-Curved AMOLED, 120Hz',processor:"Snapdragon 7s Gen 3",rear:"50MP Sony OIS + 2MP Bokeh",front:"32MP",battery:"7300 mAh, 90W FlashCharge",os:"Android 15, Funtouch OS 15",extras:"IP65, Military-grade durability",network:"5G, Wi-Fi 6, Bluetooth 5.4",weight:"199 g"} },
+];
+
+const BRANDS = ["Samsung","Apple","Xiaomi","Redmi","Vivo"];
+
+/* ========================== helpers ========================== */
+const $ = (s, el=document) => el.querySelector(s);
+const $$ = (s, el=document) => [...el.querySelectorAll(s)];
+const inr = n => "₹" + n.toLocaleString("en-IN");
+const emi = n => inr(Math.ceil(n/12));
+const esc = s => String(s).replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const waLink = msg => `https://wa.me/${SHOP.phoneRaw}?text=${encodeURIComponent(msg)}`;
+const telLink = () => `tel:+${SHOP.phoneRaw}`;
+const fmtTime = t => { let [h,m]=t.split(":").map(Number); const ap=h>=12?"PM":"AM"; h=h%12||12; return `${h}:${String(m).padStart(2,"0")} ${ap}`; };
+const DAY_IDX = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+
+const I = { // icons
+  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>',
+  wa:'<svg viewBox="0 0 32 32" fill="currentColor"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.7c-2 0-4-.5-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.7 10.7 0 1 1 16 26.7zm5.9-8c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.8 8.8 0 0 1-4.4-3.8c-.3-.6.3-.5 1-1.7.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8.6-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.7-.4z"/></svg>',
+  pct:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M19 5 5 19"/><circle cx="6.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg>',
+  card:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2.5"/><path d="M2 10h20M6 15h4"/></svg>',
+  shield:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3z"/><path d="m9 12 2 2 4-4"/></svg>',
+  star:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></svg>',
+  bolt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>',
+  tag:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z"/><circle cx="7" cy="7" r="1.5" fill="currentColor"/></svg>',
+  swap:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a3 3 0 0 1 3-3h15M7 22l-4-4 4-4"/><path d="M21 13v2a3 3 0 0 1-3 3H3"/></svg>',
+  pin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-7.6 8-13a8 8 0 0 0-16 0c0 5.4 8 13 8 13z"/><circle cx="12" cy="9" r="3"/></svg>',
+  clock:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>',
+  cpu:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="5" width="14" height="14" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M9 2v3M15 2v3M9 19v3M15 19v3M2 9h3M2 15h3M19 9h3M19 15h3"/></svg>',
+  cam:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>',
+  batt:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="17" height="10" rx="2"/><path d="M22 11v2M6 10v4M10 10v4"/></svg>',
+  screen:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2.5"/><path d="M11 18h2"/></svg>',
+  mem:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16v10H4zM8 17v3M12 17v3M16 17v3M8 11h2M14 11h2"/></svg>',
+  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>',
+  filter:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M7 12h10M10 18h4"/></svg>',
+  x:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg>',
+  apple:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 12.6c0-2.6 2.1-3.8 2.2-3.9a4.8 4.8 0 0 0-3.8-2c-1.6-.2-3.1.9-3.9.9s-2-.9-3.4-.9a5 5 0 0 0-4.2 2.6c-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6s1.8-.8 3.4-.8 2 .8 3.4.8 2.3-1.3 3.1-2.5a10.6 10.6 0 0 0 1.4-2.9 4.5 4.5 0 0 1-2.7-4.1zM13.9 5a4.4 4.4 0 0 0 1-3.2 4.6 4.6 0 0 0-3 1.5 4.2 4.2 0 0 0-1 3.1A3.8 3.8 0 0 0 13.9 5z"/></svg>',
+};
+
+/* ================= phone illustration (SVG) =================
+   Draws a stylised back/front view per model so the demo never
+   has broken images. Replace with real photos via `image`. */
+let uid = 0;
+function phoneSVG(p, colorIdx=0, view="back"){
+  if (p.image && view==="back") return `<img src="${esc(p.image)}" alt="${esc(p.name)}">`;
+  const [, c1, c2] = p.colors[colorIdx] || p.colors[0];
+  const id = "g" + (++uid);
+  const W=200, H=410, R = p.brand==="Apple" ? 34 : 30;
+  const dark = lum(c1) < .45;
+  const lens = (x,y,r) => `
+    <circle cx="${x}" cy="${y}" r="${r}" fill="#0c0c10" stroke="${dark?'#555':'#9a9a9f'}" stroke-width="2.5"/>
+    <circle cx="${x}" cy="${y}" r="${r*.62}" fill="url(#${id}l)"/>
+    <circle cx="${x-r*.28}" cy="${y-r*.3}" r="${r*.16}" fill="#fff" opacity=".55"/>`;
+  const flash = (x,y) => `<circle cx="${x}" cy="${y}" r="5.5" fill="#fff6d8" stroke="#d9cfa5" stroke-width="1"/>`;
+
+  let body = "";
+  if (view === "front"){
+    return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(p.name)} front">
+      <defs>
+        <linearGradient id="${id}s" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#ff5fae"/><stop offset=".5" stop-color="#db0171"/><stop offset="1" stop-color="#4b0a6b"/>
+        </linearGradient>
+      </defs>
+      <rect x="2" y="2" width="${W-4}" height="${H-4}" rx="${R}" fill="${c2}"/>
+      <rect x="8" y="8" width="${W-16}" height="${H-16}" rx="${R-6}" fill="#0a0a0c"/>
+      <rect x="13" y="13" width="${W-26}" height="${H-26}" rx="${R-11}" fill="url(#${id}s)"/>
+      <path d="M13 ${H*.55} C 70 ${H*.42}, 120 ${H*.72}, ${W-13} ${H*.5} L ${W-13} ${H-40} Q ${W-13} ${H-13} ${W-40} ${H-13} L 40 ${H-13} Q 13 ${H-13} 13 ${H-40} Z" fill="#fff" opacity=".12"/>
+      ${p.brand==="Apple" ? `<rect x="${W/2-30}" y="24" width="60" height="18" rx="9" fill="#000"/>` : `<circle cx="${W/2}" cy="30" r="6" fill="#000"/>`}
+      <text x="${W/2}" y="120" text-anchor="middle" font-family="Poppins,Arial" font-size="44" font-weight="300" fill="#fff">10:24</text>
+      <text x="${W/2}" y="142" text-anchor="middle" font-family="Poppins,Arial" font-size="11" fill="#fff" opacity=".85">Friday, 25 September</text>
+      <g transform="translate(${W/2-24} ${H-120})" opacity=".95">
+        <rect width="48" height="48" rx="14" fill="#fff" opacity=".22"/>
+        <path d="M11 20a19 19 0 0 1 26 0M16 25a11.5 11.5 0 0 1 16 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+        <text x="24" y="40" text-anchor="middle" font-family="Poppins,Arial" font-weight="800" font-size="12" fill="#fff">jb</text>
+      </g>
+      <rect x="${W/2-35}" y="${H-28}" width="70" height="4" rx="2" fill="#fff" opacity=".8"/>
+    </svg>`;
+  }
+
+  // camera layouts
+  switch (p.cam){
+    case "iphone-pro":
+      body = `<rect x="14" y="16" width="${W-28}" height="118" rx="26" fill="${c2}" opacity=".9"/>
+        <rect x="14" y="16" width="${W-28}" height="118" rx="26" fill="#fff" opacity=".08"/>
+        ${lens(52,50,22)}${lens(52,102,22)}${lens(104,76,22)}${flash(146,44)}<circle cx="146" cy="108" r="5" fill="#222"/>`; break;
+    case "iphone":
+      body = `<rect x="16" y="16" width="70" height="118" rx="26" fill="${c2}" opacity=".75"/>
+        ${lens(51,50,21)}${lens(51,100,21)}${flash(104,40)}`; break;
+    case "samsung-ultra":
+      body = `${lens(44,46,19)}${lens(44,92,19)}${lens(44,138,19)}${lens(88,60,14)}${flash(88,100)}`; break;
+    case "samsung":
+      body = `${lens(44,46,19)}${lens(44,92,19)}${lens(44,138,19)}${flash(82,46)}`; break;
+    case "samsung-a":
+      body = `<rect x="22" y="20" width="44" height="140" rx="22" fill="${c2}" opacity=".55"/>${lens(44,46,17)}${lens(44,90,17)}${lens(44,134,17)}${flash(82,46)}`; break;
+    case "xiaomi":
+      body = `<rect x="14" y="16" width="110" height="110" rx="30" fill="${c2}"/>
+        <rect x="14" y="16" width="110" height="110" rx="30" fill="#fff" opacity=".06"/>
+        ${lens(46,48,19)}${lens(92,48,19)}${lens(46,94,19)}${flash(92,94)}
+        <text x="${W-28}" y="40" text-anchor="end" font-family="Arial" font-size="9" font-weight="700" fill="${dark?'#bbb':'#555'}">LEICA</text>`; break;
+    case "redmi":
+      body = `<rect x="14" y="16" width="${W-28}" height="92" rx="24" fill="${c2}" opacity=".95"/>
+        ${lens(52,62,24)}${lens(112,62,18)}${lens(152,50,10)}${flash(152,78)}`; break;
+    case "vivo":
+      body = `<rect x="16" y="16" width="86" height="136" rx="30" fill="${c2}" opacity=".85"/>
+        ${lens(59,52,23)}${lens(59,112,23)}
+        <rect x="110" y="36" width="12" height="24" rx="6" fill="#fff" opacity=".8"/>`; break;
+    case "vivo-x":
+      body = `<circle cx="${W/2}" cy="92" r="72" fill="${c2}" stroke="${dark?'#777':'#fff'}" stroke-width="3" opacity=".95"/>
+        ${lens(W/2-28,66,20)}${lens(W/2+28,66,20)}${lens(W/2,118,22)}
+        <text x="${W/2}" y="160" text-anchor="middle" font-family="Arial" font-size="9" font-weight="700" fill="${dark?'#bbb':'#555'}">ZEISS</text>`; break;
+  }
+  const brandText = p.brand==="Apple"
+    ? `<path transform="translate(${W/2-12} ${H*.52}) scale(1)" d="${I.apple.match(/d="([^"]+)"/)[1]}" fill="${dark?'#fff':'#000'}" opacity=".35"/>`
+    : `<text x="${W/2}" y="${H-44}" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" letter-spacing="${p.brand==='Samsung'?2:1}" fill="${dark?'#fff':'#000'}" opacity=".35">${p.brand==="Samsung"?"SAMSUNG":p.brand.toLowerCase()}</text>`;
+
+  return `<svg viewBox="0 0 ${W} ${H}" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="${esc(p.name)}">
+    <defs>
+      <linearGradient id="${id}b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient>
+      <linearGradient id="${id}h" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity=".0"/><stop offset=".5" stop-color="#fff" stop-opacity=".22"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+      <radialGradient id="${id}l" cx=".4" cy=".35" r=".8"><stop offset="0" stop-color="#4a4a8a"/><stop offset=".6" stop-color="#15152a"/><stop offset="1" stop-color="#000"/></radialGradient>
+    </defs>
+    <rect x="2" y="2" width="${W-4}" height="${H-4}" rx="${R}" fill="url(#${id}b)" stroke="${c2}" stroke-width="3"/>
+    <rect x="7" y="7" width="${W-14}" height="${H-14}" rx="${R-5}" fill="none" stroke="#fff" stroke-opacity=".25"/>
+    <path d="M${W*.62} 4 L${W*.95} 4 L${W*.35} ${H-4} L${W*.02} ${H-4} Z" fill="url(#${id}h)" opacity=".6"/>
+    ${body}
+    ${brandText}
+  </svg>`;
+}
+function lum(hex){ const n=parseInt(hex.slice(1),16); const r=(n>>16)&255,g=(n>>8)&255,b=n&255; return (0.299*r+0.587*g+0.114*b)/255; }
+
+/* ========================== components ========================== */
+function cardHTML(p){
+  const off = p.mrp>p.price ? Math.round((1-p.price/p.mrp)*100) : 0;
+  const v = p.variants[0];
+  const ribbonCls = p.tag==="New" ? "ribbon new" : "ribbon";
+  return `<article class="card">
+    <a class="media" href="#/product/${p.id}" aria-label="View ${esc(p.name)}">
+      ${p.tag?`<span class="${ribbonCls}">${esc(p.tag)}</span>`:""}
+      ${phoneSVG(p)}
+    </a>
+    <div class="body">
+      <span class="brand-lbl">${p.brand}</span>
+      <h3><a href="#/product/${p.id}">${esc(p.name)}</a></h3>
+      <span class="variant">${v[0]} RAM · ${v[1]}</span>
+      <div class="price-row">
+        <span class="price">${inr(p.price)}</span>
+        ${off?`<span class="mrp">${inr(p.mrp)}</span><span class="off">${off}% off</span>`:""}
+      </div>
+      <span class="emi">No Cost EMI from ${emi(p.price)}/mo</span>
+      <div class="actions">
+        <a class="btn btn-outline" href="#/product/${p.id}">View</a>
+        <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(`Hi ${SHOP.name}! I'm interested in the ${p.name} (${v[0]}/${v[1]}) listed at ${inr(p.price)}. Is it available?`)}">${I.wa} Enquire</a>
+      </div>
+    </div>
+  </article>`;
+}
+
+/* ========================== pages ========================== */
+function homePage(){
+  const featured = PRODUCTS.filter(p=>p.featured).slice(0,8);
+  const heroP = [PRODUCTS[4], PRODUCTS[1], PRODUCTS[9]];
+  return `<div class="page">
+  <section class="hero">
+    <div class="wrap">
+      <div>
+        <div class="tags">
+          <span class="tag">${I.card} No Cost EMI Available</span>
+          <span class="tag alt">${I.pct} 0% Down Payment</span>
+        </div>
+        <h1>Your next <em>smartphone</em>,<br>made easy.</h1>
+        <p class="lead">Latest launches from Samsung, Apple, Xiaomi, Redmi &amp; Vivo — genuine products, best prices and easy EMI. Walk in or just WhatsApp us!</p>
+        <div class="hero-actions">
+          <a class="btn btn-white btn-lg" href="#/products">Browse Phones ${I.arrow}</a>
+          <a class="btn btn-ghost-w btn-lg" data-wa target="_blank" rel="noopener">${I.wa} WhatsApp Us</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>5+</b>Top Brands</div>
+          <div><b>100%</b>Genuine Products</div>
+          <div><b>₹0</b>Down Payment</div>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="ph a">${phoneSVG(heroP[0],1)}</div>
+        <div class="ph b">${phoneSVG(heroP[1],0,"front")}</div>
+        <div class="ph c">${phoneSVG(heroP[2],1)}</div>
+        <div class="hero-badge one"><span class="ic">${I.card}</span><div>EMI starting<b>${emi(14999)}/month</b></div></div>
+        <div class="hero-badge two"><span class="ic">${I.bolt}</span><div>Just launched<b>iPhone 17 Series</b></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">Shop by brand</span><h2>Top Brands, All Under One Roof</h2></div>
+        <a class="link-more" href="#/products">View all phones ${I.arrow}</a>
+      </div>
+      <div class="brands">
+        ${BRANDS.map(b=>{
+          const n = PRODUCTS.filter(p=>p.brand===b).length;
+          const label = b==="Samsung"?"SAMSUNG":b==="Apple"?`${I.apple}Apple`:b==="Vivo"?"vivo":b==="Xiaomi"?"Xiaomi":"Redmi";
+          return `<div class="brand ${b.toLowerCase()}" data-brand-link="${b}" role="link" tabindex="0"><span class="bn">${label}</span><small>${n} model${n>1?"s":""}</small></div>`;
+        }).join("")}
+      </div>
+    </div>
+  </section>
+
+  <section class="block tint">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="eyebrow">Featured</span><h2>Trending Smartphones</h2><p>Handpicked bestsellers &amp; latest launches in store now.</p></div>
+        <a class="link-more" href="#/products">See all products ${I.arrow}</a>
+      </div>
+      <div class="grid">${featured.map(cardHTML).join("")}</div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap">
+      <div class="sec-head"><div><span class="eyebrow">Why JellyBean6</span><h2>Shop With Confidence</h2></div></div>
+      <div class="highlights">
+        <div class="hl"><span class="ic">${I.star}</span><h4>All Top Brands Available</h4><p>Samsung, Apple, Xiaomi, Redmi, Vivo &amp; more — every popular model in one store.</p></div>
+        <div class="hl"><span class="ic">${I.bolt}</span><h4>Latest Launches &amp; Trending Models</h4><p>New phones in stock on launch day. Ask us about pre-bookings.</p></div>
+        <div class="hl"><span class="ic">${I.card}</span><h4>No Cost EMI · 0% Down</h4><p>Take your phone home today and pay in easy monthly instalments.</p></div>
+        <div class="hl"><span class="ic">${I.shield}</span><h4>100% Genuine &amp; Warranty</h4><p>Sealed-box products with official brand warranty &amp; GST bill.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" style="padding-top:0">
+    <div class="wrap">
+      <div class="emi-banner">
+        <div style="position:relative;z-index:1">
+          <h3>Take it home at <span>₹0 down payment</span> &amp; pay in easy EMIs</h3>
+          <p>Bring your Aadhaar &amp; PAN — approval in minutes. Exchange your old phone for extra value.</p>
+          <div class="banks"><span>Bajaj Finserv</span><span>HDB Financial</span><span>Credit Card EMI</span><span>Debit Card EMI</span><span>Old Phone Exchange</span></div>
+        </div>
+        <div class="actions">
+          <a class="btn btn-wa btn-lg" target="_blank" rel="noopener" href="${waLink(`Hi ${SHOP.name}! I'd like to know about No Cost EMI and 0% down payment options.`)}">${I.wa} Ask About EMI</a>
+          <a class="btn btn-white btn-lg" href="${telLink()}">${I.phone} Call Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  </div>`;
+}
+
+/* --- Listing state --- */
+const PRICE_BANDS = [
+  {id:"all",label:"All prices",min:0,max:Infinity},
+  {id:"u20",label:"Under ₹20,000",min:0,max:20000},
+  {id:"20-40",label:"₹20,000 – ₹40,000",min:20000,max:40000},
+  {id:"40-80",label:"₹40,000 – ₹80,000",min:40000,max:80000},
+  {id:"80+",label:"Above ₹80,000",min:80000,max:Infinity},
+];
+const state = { brands:new Set(), band:"all", min:"", max:"", sort:"pop" };
+
+function productsPage(){
+  return `<div class="page">
+  <section class="page-head"><div class="wrap">
+    <div class="crumbs"><a href="#/">Home</a> / Products</div>
+    <h1>All Smartphones</h1>
+    <p>Browse our range — tap <b>Enquire</b> to check availability &amp; best price on WhatsApp.</p>
+  </div></section>
+  <section class="block" style="padding-top:36px">
+    <div class="wrap listing">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <div class="f-close" style="display:none;justify-content:space-between;align-items:center;margin-bottom:12px">
+          <b style="font-size:18px">Filters</b>
+          <button class="burger" style="display:inline-flex" id="closeFilters" aria-label="Close filters">${I.x}</button>
+        </div>
+        <div class="f-group">
+          <h4>Brand</h4>
+          ${BRANDS.map(b=>`<label class="chk"><input type="checkbox" value="${b}" data-f="brand" ${state.brands.has(b)?"checked":""}> ${b} <span class="cnt">${PRODUCTS.filter(p=>p.brand===b).length}</span></label>`).join("")}
+        </div>
+        <div class="f-group">
+          <h4>Price Range</h4>
+          ${PRICE_BANDS.map(b=>`<label class="chk"><input type="radio" name="band" value="${b.id}" data-f="band" ${state.band===b.id?"checked":""}> ${b.label}</label>`).join("")}
+          <div class="range-row">
+            <input type="number" inputmode="numeric" placeholder="Min ₹" data-f="min" value="${state.min}" aria-label="Minimum price">
+            <span>–</span>
+            <input type="number" inputmode="numeric" placeholder="Max ₹" data-f="max" value="${state.max}" aria-label="Maximum price">
+          </div>
+        </div>
+        <button class="btn btn-outline btn-sm" style="width:100%" id="clearF">Clear all filters</button>
+      </aside>
+      <div>
+        <div class="toolbar">
+          <div class="count" id="count"></div>
+          <div class="toolbar-r">
+            <button class="btn btn-outline btn-sm filter-toggle" id="openFilters">${I.filter} Filters</button>
+            <select class="sort" id="sort" aria-label="Sort products">
+              <option value="pop">Sort: Popular</option>
+              <option value="low">Price: Low to High</option>
+              <option value="high">Price: High to Low</option>
+              <option value="name">Name: A–Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="chips" id="chips"></div>
+        <div class="grid" id="plist"></div>
+      </div>
+    </div>
+  </section></div>`;
+}
+
+function applyFilters(){
+  let list = PRODUCTS.slice();
+  if (state.brands.size) list = list.filter(p=>state.brands.has(p.brand));
+  const band = PRICE_BANDS.find(b=>b.id===state.band);
+  list = list.filter(p=>p.price>=band.min && p.price<band.max);
+  if (state.min!=="") list = list.filter(p=>p.price>=+state.min);
+  if (state.max!=="") list = list.filter(p=>p.price<=+state.max);
+  if (state.sort==="low") list.sort((a,b)=>a.price-b.price);
+  if (state.sort==="high") list.sort((a,b)=>b.price-a.price);
+  if (state.sort==="name") list.sort((a,b)=>a.name.localeCompare(b.name));
+
+  $("#plist").innerHTML = list.length ? list.map(cardHTML).join("")
+    : `<div class="empty" style="grid-column:1/-1"><h3>No phones match these filters</h3><p>Try a different brand or price range — or WhatsApp us, we can arrange most models!</p><button class="btn btn-pink btn-sm" id="clearF2">Clear filters</button></div>`;
+  $("#count").innerHTML = `Showing <b>${list.length}</b> of ${PRODUCTS.length} phones`;
+  $("#sort").value = state.sort;
+
+  const chips = [...state.brands].map(b=>`<span class="chip" data-rm-brand="${b}">${b} ✕</span>`);
+  if (state.band!=="all") chips.push(`<span class="chip" data-rm-band>${PRICE_BANDS.find(b=>b.id===state.band).label} ✕</span>`);
+  if (state.min!==""||state.max!=="") chips.push(`<span class="chip" data-rm-range>${state.min?inr(+state.min):"₹0"} – ${state.max?inr(+state.max):"Any"} ✕</span>`);
+  $("#chips").innerHTML = chips.join("");
+}
+
+function bindListing(){
+  const f = $("#filters");
+  f.addEventListener("change", e=>{
+    const t=e.target;
+    if (t.dataset.f==="brand") t.checked ? state.brands.add(t.value) : state.brands.delete(t.value);
+    if (t.dataset.f==="band") state.band=t.value;
+    applyFilters();
+  });
+  f.addEventListener("input", e=>{
+    const t=e.target;
+    if (t.dataset.f==="min"||t.dataset.f==="max"){ state[t.dataset.f]=t.value; applyFilters(); }
+  });
+  const clear = ()=>{ state.brands.clear(); state.band="all"; state.min=""; state.max=""; render(); };
+  $("#clearF").onclick = clear;
+  $("#sort").onchange = e=>{ state.sort=e.target.value; applyFilters(); };
+  $("#openFilters").onclick = ()=>f.classList.add("open");
+  $("#closeFilters").onclick = ()=>f.classList.remove("open");
+  document.addEventListener("click", e=>{ if (f.classList.contains("open") && !f.contains(e.target) && e.target.id!=="openFilters" && !e.target.closest("#openFilters")) f.classList.remove("open"); });
+  $("#chips").onclick = e=>{
+    const c=e.target.closest(".chip"); if(!c) return;
+    if (c.dataset.rmBrand) state.brands.delete(c.dataset.rmBrand);
+    if ("rmBand" in c.dataset) state.band="all";
+    if ("rmRange" in c.dataset){ state.min=""; state.max=""; }
+    render();
+  };
+  $("#plist").onclick = e=>{ if (e.target.id==="clearF2") clear(); };
+  applyFilters();
+}
+
+/* --- Detail --- */
+const detailSel = { color:0, variant:0, view:"back" };
+function detailPage(id){
+  const p = PRODUCTS.find(x=>x.id===id);
+  if (!p) return `<div class="page"><section class="block"><div class="wrap empty"><h3>Phone not found</h3><p>It may have been removed.</p><a class="btn btn-pink" href="#/products">Browse all phones</a></div></section></div>`;
+  const s = p.specs;
+  const related = PRODUCTS.filter(x=>x.id!==p.id && (x.brand===p.brand || Math.abs(x.price-p.price)<25000)).slice(0,4);
+  const ram = p.variants.map(v=>v[0]).filter((v,i,a)=>a.indexOf(v)===i).join(" / ");
+  const rom = p.variants.map(v=>v[1]).filter((v,i,a)=>a.indexOf(v)===i).join(" / ");
+  return `<div class="page">
+  <section class="block" style="padding-top:28px">
+    <div class="wrap">
+      <div class="crumbs" style="color:var(--muted);margin-bottom:22px"><a href="#/">Home</a> / <a href="#/products">Products</a> / <a href="#/products" data-brand-link="${p.brand}">${p.brand}</a> / <span style="color:var(--ink)">${esc(p.name)}</span></div>
+      <div class="detail">
+        <div class="gallery">
+          <div class="stage" id="stage"></div>
+          <div class="thumbs" id="thumbs"></div>
+        </div>
+        <div class="d-info">
+          <span class="brand-lbl">${p.brand}</span>
+          <h1>${esc(p.name)}</h1>
+          <div class="rating"><span class="stars">★★★★★</span> 4.${5+ (p.id.length%4)} · In stock at store</div>
+          <div class="d-price" id="dprice"></div>
+          <div class="tax">Inclusive of all taxes · GST invoice provided</div>
+
+          <div class="offer-box">
+            <div>${I.card}<span><b>No Cost EMI</b> — pay <b id="emiAmt"></b>/month for 12 months</span></div>
+            <div>${I.pct}<span><b>0% Down Payment</b> on select finance partners</span></div>
+            <div>${I.swap}<span><b>Exchange offer</b> — get extra value for your old phone</span></div>
+          </div>
+
+          <div class="opt-label">Colour: <span id="colorName"></span></div>
+          <div class="swatches" id="swatches">
+            ${p.colors.map((c,i)=>`<button class="sw" title="${esc(c[0])}" aria-label="${esc(c[0])}" data-i="${i}" style="background:linear-gradient(135deg,${c[1]},${c[2]})"></button>`).join("")}
+          </div>
+          <div class="opt-label">Variant</div>
+          <div class="pills" id="pills">
+            ${p.variants.map((v,i)=>`<button class="pill" data-i="${i}">${v[0]} + ${v[1]}<small>${inr(v[2])}</small></button>`).join("")}
+          </div>
+
+          <div class="d-actions">
+            <a class="btn btn-wa btn-lg" id="waBtn" target="_blank" rel="noopener">${I.wa} WhatsApp Enquiry</a>
+            <a class="btn btn-pink btn-lg" href="${telLink()}">${I.phone} Call Now</a>
+          </div>
+          <div class="note">${I.shield} 100% genuine · Official brand warranty · Sealed box</div>
+
+          <div class="quick-specs">
+            <div class="qs">${I.screen}<b>${s.display.split(" ")[0]}</b><small>Display</small></div>
+            <div class="qs">${I.cam}<b>${s.rear.match(/\d+MP/)[0]}</b><small>Main Camera</small></div>
+            <div class="qs">${I.batt}<b>${(s.battery.match(/\d+ mAh/)||["All-day"])[0]}</b><small>Battery</small></div>
+            <div class="qs">${I.mem}<b>${p.variants[0][0]}</b><small>RAM</small></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="specs">
+        <h2>Full Specifications</h2>
+        <div style="overflow-x:auto">
+        <table class="spec-table">
+          <thead><tr><th colspan="2">${esc(p.name)}</th></tr></thead>
+          <tbody>
+            <tr class="group"><td colspan="2">Performance &amp; Memory</td></tr>
+            <tr><td>Processor</td><td>${esc(s.processor)}</td></tr>
+            <tr><td>RAM</td><td>${ram}</td></tr>
+            <tr><td>Internal Storage</td><td>${rom}</td></tr>
+            <tr><td>Operating System</td><td>${esc(s.os)}</td></tr>
+            <tr class="group"><td colspan="2">Display</td></tr>
+            <tr><td>Screen</td><td>${esc(s.display)}</td></tr>
+            <tr class="group"><td colspan="2">Camera</td></tr>
+            <tr><td>Rear Camera</td><td>${esc(s.rear)}</td></tr>
+            <tr><td>Front Camera</td><td>${esc(s.front)}</td></tr>
+            <tr class="group"><td colspan="2">Battery &amp; More</td></tr>
+            <tr><td>Battery</td><td>${esc(s.battery)}</td></tr>
+            <tr><td>Connectivity</td><td>${esc(s.network)}</td></tr>
+            <tr><td>Highlights</td><td>${esc(s.extras)}</td></tr>
+            <tr><td>Weight</td><td>${esc(s.weight)}</td></tr>
+            <tr><td>Colours</td><td>${p.colors.map(c=>esc(c[0])).join(", ")}</td></tr>
+            <tr><td>In the Box</td><td>Handset, USB-C cable, SIM ejector, documentation</td></tr>
+          </tbody>
+        </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  ${related.length?`<section class="block tint"><div class="wrap">
+    <div class="sec-head"><div><span class="eyebrow">You may also like</span><h2>Similar Phones</h2></div><a class="link-more" href="#/products">View all ${I.arrow}</a></div>
+    <div class="grid">${related.map(cardHTML).join("")}</div>
+  </div></section>`:""}
+  </div>`;
+}
+
+function bindDetail(id){
+  const p = PRODUCTS.find(x=>x.id===id); if(!p) return;
+  Object.assign(detailSel,{color:0,variant:0,view:"back"});
+  const upd = ()=>{
+    const v = p.variants[detailSel.variant], c = p.colors[detailSel.color];
+    const back = phoneSVG(p, detailSel.color, "back"), front = phoneSVG(p, detailSel.color, "front");
+    $("#stage").innerHTML = detailSel.view==="both" ? `<div class="pair">${back}${front}</div>` : `<div class="pair">${detailSel.view==="back"?back:front}</div>`;
+    $("#thumbs").innerHTML = ["back","front","both"].map(k=>`<button data-v="${k}" class="${detailSel.view===k?"on":""}" aria-label="${k} view">${k==="front"?front:back}</button>`).join("");
+    const mrp = Math.round(v[2]*p.mrp/p.price/100)*100 - 1;
+    const off = p.mrp>p.price ? Math.round((1-v[2]/mrp)*100) : 0;
+    $("#dprice").innerHTML = `<span class="price">${inr(v[2])}</span>${off>0?`<span class="mrp">MRP ${inr(mrp)}</span><span class="off">${off}% off</span>`:""}`;
+    $("#emiAmt").textContent = emi(v[2]);
+    $("#colorName").textContent = c[0];
+    $$("#swatches .sw").forEach((b,i)=>b.classList.toggle("on",i===detailSel.color));
+    $$("#pills .pill").forEach((b,i)=>b.classList.toggle("on",i===detailSel.variant));
+    $("#waBtn").href = waLink(`Hi ${SHOP.name}! I'm interested in the ${p.name} — ${c[0]}, ${v[0]} RAM + ${v[1]} (${inr(v[2])}). Is it available? Please share EMI options.`);
+  };
+  $("#swatches").onclick = e=>{ const b=e.target.closest(".sw"); if(b){detailSel.color=+b.dataset.i; upd();} };
+  $("#pills").onclick = e=>{ const b=e.target.closest(".pill"); if(b){detailSel.variant=+b.dataset.i; upd();} };
+  $("#thumbs").onclick = e=>{ const b=e.target.closest("button"); if(b){detailSel.view=b.dataset.v; upd();} };
+  upd();
+}
+
+/* --- Contact --- */
+function contactPage(){
+  const now = new Date(), today = DAY_IDX[now.getDay()];
+  const h = SHOP.hours.find(x=>x.day===today);
+  const mins = now.getHours()*60+now.getMinutes();
+  const toM = t=>{const [a,b]=t.split(":").map(Number);return a*60+b;};
+  const open = h && mins>=toM(h.open) && mins<toM(h.close);
+  return `<div class="page">
+  <section class="page-head"><div class="wrap">
+    <div class="crumbs"><a href="#/">Home</a> / Contact</div>
+    <h1>Visit or Contact Us</h1>
+    <p>Drop by the store, give us a call, or message us on WhatsApp — we reply fast!</p>
+  </div></section>
+  <section class="block" style="padding-top:40px">
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="info-cards">
+          <div class="ic-card"><span class="ic">${I.pin}</span><div><h4>Store Address</h4><p>${SHOP.address.map(esc).join("<br>")}</p>
+            <p style="margin-top:8px"><a class="lnk" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SHOP.mapQuery)}">Get directions →</a></p></div></div>
+          <div class="ic-card"><span class="ic">${I.phone}</span><div><h4>Phone</h4><p><a class="lnk" href="${telLink()}">${SHOP.phone}</a></p><p style="font-size:13px">Call for price, stock &amp; EMI queries</p></div></div>
+          <div class="ic-card"><span class="ic">${I.clock}</span><div style="flex:1"><h4>Business Hours <span class="open-now ${open?"yes":"no"}">${open?"Open now":"Closed now"}</span></h4>
+            <table class="hours">${SHOP.hours.map(x=>`<tr class="${x.day===today?"today":""}"><td>${x.day}</td><td>${fmtTime(x.open)} – ${fmtTime(x.close)}</td></tr>`).join("")}</table></div></div>
+        </div>
+        <div class="map">
+          <iframe title="Store location map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=${encodeURIComponent(SHOP.mapQuery)}&z=15&output=embed"></iframe>
+          <div class="map-foot"><span><b>${SHOP.name}</b> · ${esc(SHOP.address[1])}</span>
+            <a class="btn btn-pink btn-sm" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SHOP.mapQuery)}">${I.pin} Open in Maps</a></div>
+        </div>
+      </div>
+      <div class="wa-cta">
+        <div><h3>Chat with us on WhatsApp</h3><p>Ask for today's best price, stock availability or EMI plans — instant reply during store hours.</p></div>
+        <a class="btn btn-lg" data-wa target="_blank" rel="noopener">${I.wa} Message on WhatsApp</a>
+      </div>
+    </div>
+  </section></div>`;
+}
+
+/* ========================== router ========================== */
+function render(){
+  const hash = location.hash.replace(/^#\/?/,"");
+  const [route, arg] = hash.split("/");
+  const app = $("#app");
+  let key = "home";
+  if (route==="products"){ app.innerHTML = productsPage(); bindListing(); key="products"; }
+  else if (route==="product"){ app.innerHTML = detailPage(arg); bindDetail(arg); key="products"; }
+  else if (route==="contact"){ app.innerHTML = contactPage(); key="contact"; }
+  else { app.innerHTML = homePage(); }
+  $$("nav.main a").forEach(a=>a.classList.toggle("active", a.dataset.nav===key));
+  $("#nav").classList.remove("open");
+  $("#burger").setAttribute("aria-expanded","false");
+  fillShopInfo();
+  const t = {home:"Mobile Phone Shop", products:"All Smartphones", contact:"Contact Us"}[key];
+  const p = route==="product" && PRODUCTS.find(x=>x.id===arg);
+  document.title = `${p ? p.name : t} | JellyBean6`;
+}
+
+function fillShopInfo(){
+  const general = waLink(`Hi ${SHOP.name}! I'd like to enquire about a mobile phone.`);
+  $$("[data-wa]").forEach(a=>a.href=general);
+  $$("[data-call]").forEach(a=>a.href=telLink());
+  $$("[data-phone-text]").forEach(e=>e.textContent=SHOP.phone);
+  $$("[data-insta]").forEach(a=>a.href=`https://www.instagram.com/${SHOP.instagram}/`);
+  $$("[data-insta-text]").forEach(e=>e.textContent="@"+SHOP.instagram);
+  const wd = SHOP.hours[0], sun = SHOP.hours[6];
+  $$("[data-hours-short]").forEach(e=>e.textContent=`Mon–Sat ${fmtTime(wd.open)}–${fmtTime(wd.close)} · Sun ${fmtTime(sun.open)}–${fmtTime(sun.close)}`);
+  $$("[data-address-footer]").forEach(e=>e.innerHTML="📍 "+SHOP.address.map(esc).join(", "));
+}
+
+// Brand links (home tiles, footer, breadcrumbs) → pre-filter listing
+document.addEventListener("click", e=>{
+  const b = e.target.closest("[data-brand-link]");
+  if (!b) return;
+  e.preventDefault();
+  state.brands = new Set([b.dataset.brandLink]); state.band="all"; state.min=""; state.max="";
+  if (location.hash==="#/products") render(); else location.hash="#/products";
+});
+document.addEventListener("keydown", e=>{
+  if (e.key==="Enter" && e.target.matches(".brand[data-brand-link]")) e.target.click();
+});
+
+$("#burger").onclick = ()=>{
+  const n=$("#nav"); n.classList.toggle("open");
+  $("#burger").setAttribute("aria-expanded", n.classList.contains("open"));
+};
+window.addEventListener("hashchange", ()=>{ render(); window.scrollTo({top:0,behavior:"instant"}); });
+$("#yr").textContent = new Date().getFullYear();
+render();
+</script>
+</body>
+</html>
